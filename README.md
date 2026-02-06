@@ -32,12 +32,33 @@ This skill guides an agent to:
 Use this skill when working on existing projects where safety, compatibility,
 and test coverage are critical.
 
-Example prompt:
+Basic prompt:
 
 ```text
 Use $enhance-existing-features to add the new behavior, verify docs, and update tests.
 ```
 
+## Example
+
+Practical brownfield request example:
+
+```text
+Use $enhance-existing-features to add pagination + date filtering to /api/orders,
+keep backward compatibility with existing query params, and add integration tests
+for repository + service + API handler flow.
+```
+
+Expected execution style:
+
+- Map API handler/service/repository dependencies before edits.
+- Confirm framework parsing and validation behavior from official docs.
+- Keep implementation minimal and compatible with existing response contracts.
+- Add or update tests at the integration level for changed behavior.
+
+## Version
+
+Current release tag: `v0.1.0`
+
 ## License
 
-This repository currently does not define a license.
+MIT (see `LICENSE`)

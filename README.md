@@ -1,6 +1,10 @@
 # enhance-existing-features
 
-A Codex skill for safely extending brownfield codebases.
+An agent skill for safely extending features in brownfield codebases.
+
+This repository packages a reusable workflow for AI agents to understand
+existing dependencies first, verify official docs, implement focused changes,
+and update tests with minimal risk.
 
 ## What this skill does
 

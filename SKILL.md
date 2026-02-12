@@ -1,13 +1,13 @@
 ---
 name: enhance-existing-features
-description: Build and extend brownfield features in an existing codebase. Use when a request requires understanding module dependencies, researching the latest official docs for current tech stacks/APIs/external dependencies, and implementing tested changes in a mature project. For multi-module changes, produce a PRD before coding.
+description: Build and extend brownfield features in an existing codebase. Use when a request requires understanding module dependencies, researching the latest official docs for current tech stacks/APIs/external dependencies, and implementing tested changes in a mature project. For multi-module changes, produce a PRD and obtain explicit user approval before coding.
 ---
 
 # Enhance Existing Features
 
 ## Overview
 
-Extend existing systems safely by mapping dependencies first, verifying the latest authoritative docs, writing a PRD for multi-module changes, implementing minimal changes, and updating tests that match the scenario.
+Extend existing systems safely by mapping dependencies first, verifying the latest authoritative docs, writing a PRD for multi-module changes, obtaining explicit PRD approval from the user, implementing minimal changes, and updating tests that match the scenario.
 
 ## Workflow
 
@@ -34,10 +34,12 @@ Extend existing systems safely by mapping dependencies first, verifying the late
 - Store PRD at `docs/plans/{YYYY-MM-DD}-{feature_name}.md`.
 - Write the PRD in the user's language by default.
 - Fill Reference, Core Requirements, Business Flow, Clarification Questions, and Test Plan sections.
-- Share the PRD and get user confirmation before implementation.
+- Share the PRD and obtain explicit user approval on the PRD before implementation.
+- Do not modify implementation code until PRD approval is received.
 
 ### 4) Implement the feature
 
+- If step 3 was triggered, begin implementation only after explicit PRD approval from the user.
 - Reuse existing patterns and abstractions; avoid over-engineering.
 - Keep changes focused and minimal; preserve current behavior unless required.
 - Follow project conventions (naming, linting, formatting, configuration).

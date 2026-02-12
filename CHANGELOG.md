@@ -2,6 +2,12 @@
 
 All notable changes to this project are documented in this file.
 
+## [v0.1.2] - 2026-02-12
+
+### Changed
+- Tightened the multi-module PRD workflow to require explicit user approval on the PRD before any implementation work starts.
+- Updated usage docs and agent metadata to make PRD approval gating explicit.
+
 ## [v0.1.1] - 2026-02-12
 
 ### Added
